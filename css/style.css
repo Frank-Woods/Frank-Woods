@@ -1,0 +1,252 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	background-image: url(https://freight.cargo.site/t/original/i/54f184319e5186920725fa1e484064601a551db27b228d36c9d1495ce3f54f9e/05_Various_Holograms_04.jpg);
+	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+	padding-top: 100px;
+	font-family: 'Josefin Sans', sans-serif;
+	width: 50%;
+	margin: 0 auto;
+}
+.logo{
+	background-color: black;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.graficlogo{
+	padding: 5px;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+.Nav{
+	width: 100%;
+	height: 50px;
+}
+.topNav{
+	padding-bottom: 5px;
+	display: flex;
+	justify-content: space-around;
+	background-color: white;
+}
+.topNav a{
+	color: black;
+	padding: 14px 16px;
+	font-size: 15px;
+}
+.topNav a:hover{
+	border-bottom: 2px solid black;
+}
+.icon{
+	display: none;
+}
+.mainImg{
+	width: 100%;
+	height: 50%;
+	max-width: 100%;
+}
+.headline{
+	background-color: white;
+	width: 100%;
+	text-align: left;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+h1::before{
+	content: "";
+	display: inline-block;
+  	width: 20px;
+  	height: 25px;
+  	margin-right: 5px; 
+  	background-color: #2E9AFE;
+}
+.main_container{ 
+	display: flex;
+	justify-content: center;
+}
+.container{
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.item{
+	width: 30%;
+	padding-bottom: 20px;
+}
+.ImgItem{
+	max-width: 100%;
+}
+.paper_container{
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	text-align: left;
+	flex-wrap: wrap;
+}
+.item_paper{
+	border-right: 1px solid;
+	border-top: 1px solid;
+	padding: 10px;
+	width: 30%;
+}
+.paper_container .item_paper:first-child{
+	border-left: 1px solid;
+}
+.paper_container .item_paper:nth-child(3n+1){
+	border-left: 1px solid;
+}
+.paper_container .item_paper:nth-child(10), .paper_container .item_paper:nth-child(11), .paper_container .item_paper:nth-child(12){
+	border-bottom: 1px solid;
+}
+.paperImg{
+	width: 100%;
+	max-width: 100%;
+}
+footer{
+	width: 100%;
+	height: auto;
+	background-color: black;
+	padding-top: 10px;
+}
+footer a{
+	color: white;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.footerNav{
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+footer nav a:hover{
+	border-bottom: 1px solid white;
+}
+.footerSocial{
+	display: flex;
+	justify-content: space-between;
+}
+.Footlogo{
+	background-color: black;
+	width: 70%;
+}
+.social{
+	margin-top: 30px; 
+	display: flex;
+	flex-wrap: wrap;
+	width: 30%;
+}
+.social img{
+	max-width: 100%;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+@media screen and (max-width: 1920px){
+	body{
+		width: 70%;
+	}
+}
+@media screen and (max-width: 1600px){
+	.container{
+		flex-direction: column;
+	}
+	.item{
+		width: 100%;
+	}
+	.item_paper{
+		width: 45%;
+	}
+	.paper_container .item_paper:nth-child(3n+1){
+		border-left: none;
+	}
+	.paper_container .item_paper:nth-child(10){
+		border-bottom: none;
+	}
+	.paper_container .item_paper:nth-child(odd){
+		border-left: 1px solid;
+	}
+	.social{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 1280px){
+	body{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1024px){
+	.social{
+		width: 60%;
+	}
+}
+@media screen and (max-width: 768px){
+	.topNav a:not(:nth-child(8n-7)){
+		display: none;
+	}
+	.topNav{
+		display: flex;
+		justify-content: space-between;
+	}
+	.topNav .icon{
+		display: block;
+		color: black;
+	}
+}
+@media screen and (max-width: 480px){
+	.item_paper{
+		width: 100%;
+		border: none;
+		border-top: 1px solid;
+	}
+	.paper_container .item_paper:first-child{
+		border-left: none;
+	}
+	.paper_container .item_paper:nth-child(odd){
+		border-left: none;
+	}
+	.paper_container .item_paper:nth-child(11){
+		border-bottom: none;
+	}
+	.footerNav a:not(:first-child){
+		display: none;
+	}
+	.footerNav{
+		display: flex;
+		justify-content: center;
+	}
+	.Footlogo{
+		width: 100%;
+	}
+	.social{
+		text-align: center;
+		margin-top: 0;
+		width: 100%;
+	}
+	footer .social a{
+		width: 40%; 
+	}
+	.social img{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 320px){
+	.social img{
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+}
