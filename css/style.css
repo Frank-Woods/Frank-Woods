@@ -199,6 +199,7 @@ footer nav a:hover{
 		justify-content: space-between;
 	}
 	.topNav a.icon{
+		cursor: pointer;
 		display: block;
 		color: black;
 	}
