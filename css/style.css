@@ -256,6 +256,7 @@ footer nav a:hover{
 	.topNav.responsive{
 		display: block;
 		position: relative;
+		z-index: 1;
 	}
 	.topNav.responsive a.icon{
 		position: absolute;
