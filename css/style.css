@@ -10,18 +10,18 @@ li{
 	list-style: none;
 }
 body{
-	background-image: url(https://freight.cargo.site/t/original/i/54f184319e5186920725fa1e484064601a551db27b228d36c9d1495ce3f54f9e/05_Various_Holograms_04.jpg);
+	background-image: url(https://wallpaperscave.ru/images/original/17/11-16/games-far-cry-4-1235.jpg);
 	background-position: center center;
   	background-repeat: no-repeat;
   	background-attachment: fixed;
   	background-size: cover;
 	padding-top: 100px;
 	font-family: 'Josefin Sans', sans-serif;
-	width: 50%;
+	width: 1230px;
 	margin: 0 auto;
 }
 .logo{
-	background-color: black;
+	background-color: #f9fafe;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -39,23 +39,91 @@ body{
 	padding-bottom: 5px;
 	display: flex;
 	justify-content: space-around;
-	background-color: white;
+	background-color: black;
 }
 .topNav a{
-	color: black;
+	color: white;
 	padding: 14px 16px;
 	font-size: 15px;
 }
 .topNav a:hover{
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid white;
 }
 .icon{
 	display: none;
 }
-.mainImg{
-	width: 100%;
-	height: 50%;
-	max-width: 100%;
+.slider {
+	background-image: url(https://pp.userapi.com/c846016/v846016842/1e3eeb/jrf8OnXHbXo.jpg);
+	background-position: center center;
+ 	background-size: cover;
+	background-repeat: no-repeat;
+	width: 1230px;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+.slide {
+	width: 1230px;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation-name: slide;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.slide1 { 
+ background: url(https://a-static.besthdwallpaper.com/mortal-kombat-11-scorpion-oboi-17099_L.jpg);
+ background-position: center center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ animation-delay: 7.5s;
+}
+.slide2 { 
+ background: url(https://avatars.mds.yandex.net/get-pdb/1566941/0325bc34-f32b-4ebf-85b0-94fa3c040ff4/s1200);
+ background-position: center center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ animation-delay: 5s;
+}
+.slide3 { 
+ background: url(https://itc.ua/wp-content/uploads/2019/03/Sekiro.jpg);
+ background-position: center center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ animation-delay: 2.5s;
+}
+.slide4 { 
+ background: url(https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTc9FvITMUFGGX3DIrw0bw20X2_WaD4TdJuIx24Tf.2ZqUsTDWUkCcOmafG4ULlXbMct7xv4.07Vmc0J2nfmaDPAui1jgFVXnOko9NpIhZqNrzsPYyt56Tp8aRuZ3OinGuwCqXfpjAjfbttUS3xucMueFf4dL.MOEhcWJiaDFZdZ6w-&h=720&w=1280&format=jpg);
+ background-position: center center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ animation-delay: 0s;
+}
+@keyframes slide {
+ 	from {
+ 		top: 0;
+  		left: 0;
+ 	}
+ 	12.5% {
+  		transform: translate(0px, 0px);
+ 	}
+ 	25% {
+  		transform: translate(-1230px, 0);
+ 	}
+ 	36% {
+  		transform: translate(-1230px, 500px);
+ 	}
+ 	37% {
+  		transform: translate(1230px, 500px);
+ 	}
+ 	87.5% {
+  		transform: translate(1230px, 0);
+ 	}
+ 	to {
+  		transform: (0px, 0px);
+ 	}
 }
 .headline{
 	background-color: white;
@@ -142,8 +210,12 @@ footer nav a:hover{
 	justify-content: space-between;
 }
 .Footlogo{
+	padding-left: 10px;
 	background-color: black;
 	width: 70%;
+}
+.Footlogo img{
+	border-radius: 50%;
 }
 .social{
 	margin-top: 30px; 
@@ -156,38 +228,16 @@ footer nav a:hover{
 	margin-left: 10px;
 	margin-bottom: 10px;
 }
-@media screen and (max-width: 1920px){
-	body{
-		width: 70%;
-	}
-}
-@media screen and (max-width: 1600px){
-	.container{
-		flex-direction: column;
-	}
-	.item{
-		width: 100%;
-	}
-	.item_paper{
-		width: 45%;
-	}
-	.paper_container .item_paper:nth-child(3n+1){
-		border-left: none;
-	}
-	.paper_container .item_paper:nth-child(10){
-		border-bottom: none;
-	}
-	.paper_container .item_paper:nth-child(odd){
-		border-left: 1px solid;
-	}
-	.social{
-		width: 50%;
-	}
-}
 @media screen and (max-width: 1280px){
 	body{
 		width: 100%;
 		padding-top: 0;
+	}
+	.slider {
+	width: 100vw;
+	}	
+	.slide {
+	width: 100vw;
 	}
 }
 @media screen and (max-width: 768px){
@@ -201,7 +251,7 @@ footer nav a:hover{
 	.topNav a.icon{
 		cursor: pointer;
 		display: block;
-		color: black;
+		color: white;
 	}
 	.topNav.responsive{
 		display: block;
@@ -216,6 +266,24 @@ footer nav a:hover{
 		float: none;
 		display: block;
 		text-align: left;
+	}
+	.item_paper{
+		width: 45%;
+	}
+	.paper_container .item_paper:nth-child(3n+1){
+		border-left: none;
+	}
+	.paper_container .item_paper:nth-child(10){
+		border-bottom: none;
+	}
+	.paper_container .item_paper:nth-child(odd){
+		border-left: 1px solid;
+	}
+	.container{
+		flex-direction: column;
+	}
+	.item{
+		width: 100%;
 	}
 	.social{
 		width: 60%;
