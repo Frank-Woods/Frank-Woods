@@ -10,14 +10,14 @@ li{
 	list-style: none;
 }
 body{
-	background-image: url(https://wallpaperscave.ru/images/original/17/11-16/games-far-cry-4-1235.jpg);
+	background-image: url(https://i.playground.ru/i/pix/2596579/image.jpg);
 	background-position: center center;
   	background-repeat: no-repeat;
   	background-attachment: fixed;
   	background-size: cover;
 	padding-top: 100px;
 	font-family: 'Josefin Sans', sans-serif;
-	width: 1230px;
+	width: 1280px;
 	margin: 0 auto;
 }
 .logo{
@@ -53,46 +53,42 @@ body{
 	display: none;
 }
 .slider {
-	background-image: url(https://pp.userapi.com/c846016/v846016842/1e3eeb/jrf8OnXHbXo.jpg);
-	background-position: center center;
- 	background-size: cover;
-	background-repeat: no-repeat;
-	width: 1230px;
+	width: 100%;
 	height: 500px;
 	position: relative;
 	overflow: hidden;
 }
 .slide {
-	width: 1230px;
+	width: 100%;
 	height: 500px;
 	position: absolute;
 	top: 0;
 	left: 0;
 	animation-name: slide;
-	animation-duration: 10s;
+	animation-duration: 20s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
 .slide1 { 
- background: url(https://a-static.besthdwallpaper.com/mortal-kombat-11-scorpion-oboi-17099_L.jpg);
+ background: url(https://img5.goodfon.ru/wallpaper/nbig/d/72/shane-miranda-by-shane-miranda-mortal-kombat-xi-cover-art.jpg);
  background-position: center center;
  background-size: cover;
  background-repeat: no-repeat;
- animation-delay: 7.5s;
+ animation-delay: 15s;
 }
 .slide2 { 
- background: url(https://avatars.mds.yandex.net/get-pdb/1566941/0325bc34-f32b-4ebf-85b0-94fa3c040ff4/s1200);
+ background: url(https://i.ytimg.com/vi/qGyZfyh5Do8/maxresdefault.jpg);
+ background-position: center center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ animation-delay: 10s;
+}
+.slide3 { 
+ background: url(https://nintendonews.ru/wp-content/uploads/2018/08/doom_eternal_quakecon_2018_Soul_Processing-Hell-Concept_1533718979.jpg);
  background-position: center center;
  background-size: cover;
  background-repeat: no-repeat;
  animation-delay: 5s;
-}
-.slide3 { 
- background: url(https://itc.ua/wp-content/uploads/2019/03/Sekiro.jpg);
- background-position: center center;
- background-size: cover;
- background-repeat: no-repeat;
- animation-delay: 2.5s;
 }
 .slide4 { 
  background: url(https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTc9FvITMUFGGX3DIrw0bw20X2_WaD4TdJuIx24Tf.2ZqUsTDWUkCcOmafG4ULlXbMct7xv4.07Vmc0J2nfmaDPAui1jgFVXnOko9NpIhZqNrzsPYyt56Tp8aRuZ3OinGuwCqXfpjAjfbttUS3xucMueFf4dL.MOEhcWJiaDFZdZ6w-&h=720&w=1280&format=jpg);
@@ -110,16 +106,16 @@ body{
   		transform: translate(0px, 0px);
  	}
  	25% {
-  		transform: translate(-1230px, 0);
+  		transform: translate(-100%, 0);
  	}
  	36% {
-  		transform: translate(-1230px, 500px);
+  		transform: translate(-100%, 500px);
  	}
  	37% {
-  		transform: translate(1230px, 500px);
+  		transform: translate(100%, 500px);
  	}
  	87.5% {
-  		transform: translate(1230px, 0);
+  		transform: translate(100%, 0);
  	}
  	to {
   		transform: (0px, 0px);
@@ -232,13 +228,6 @@ footer nav a:hover{
 	body{
 		width: 100%;
 		padding-top: 0;
-	}
-	.slider {
-	width: 100vw;
-	}	
-	.slide {
-	width: 100vw;
-	}
 }
 @media screen and (max-width: 768px){
 	.topNav a:not(:nth-child(8n-7)){
