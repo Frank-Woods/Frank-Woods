@@ -10,7 +10,7 @@ li{
 	list-style: none;
 }
 body{
-	background-image: url(https://i.playground.ru/i/pix/2596579/image.jpg);
+	background-image: url(../img/d_.jpg);
 	background-position: center center;
   	background-repeat: no-repeat;
   	background-attachment: fixed;
@@ -70,28 +70,28 @@ body{
 	animation-iteration-count: infinite;
 }
 .slide1 { 
- background: url(https://img5.goodfon.ru/wallpaper/nbig/d/72/shane-miranda-by-shane-miranda-mortal-kombat-xi-cover-art.jpg);
+ background: url(../img/d_1.jpg);
  background-position: center center;
  background-size: cover;
  background-repeat: no-repeat;
  animation-delay: 15s;
 }
 .slide2 { 
- background: url(https://i.ytimg.com/vi/qGyZfyh5Do8/maxresdefault.jpg);
+ background: url(../img/d_2.jpg);
  background-position: center center;
  background-size: cover;
  background-repeat: no-repeat;
  animation-delay: 10s;
 }
 .slide3 { 
- background: url(https://nintendonews.ru/wp-content/uploads/2018/08/doom_eternal_quakecon_2018_Soul_Processing-Hell-Concept_1533718979.jpg);
+ background: url(../img/d_3.jpg);
  background-position: center center;
  background-size: cover;
  background-repeat: no-repeat;
  animation-delay: 5s;
 }
 .slide4 { 
- background: url(https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTc9FvITMUFGGX3DIrw0bw20X2_WaD4TdJuIx24Tf.2ZqUsTDWUkCcOmafG4ULlXbMct7xv4.07Vmc0J2nfmaDPAui1jgFVXnOko9NpIhZqNrzsPYyt56Tp8aRuZ3OinGuwCqXfpjAjfbttUS3xucMueFf4dL.MOEhcWJiaDFZdZ6w-&h=720&w=1280&format=jpg);
+ background: url(../img/d_4.jpg);
  background-position: center center;
  background-size: cover;
  background-repeat: no-repeat;
