@@ -10,7 +10,7 @@ li{
 	list-style: none;
 }
 body{
-	background-image: url(../img/d_.jpg);
+	background-image: url(../Img/d_.jpg);
 	background-position: center center;
   	background-repeat: no-repeat;
   	background-attachment: fixed;
@@ -70,28 +70,28 @@ body{
 	animation-iteration-count: infinite;
 }
 .slide1 { 
- background: url(../img/d_1.jpg);
+ background: url(../Img/d_1.jpg);
  background-position: center center;
  background-size: cover;
  background-repeat: no-repeat;
  animation-delay: 15s;
 }
 .slide2 { 
- background: url(../img/d_2.jpg);
+ background: url(../Img/d_2.jpg);
  background-position: center center;
  background-size: cover;
  background-repeat: no-repeat;
  animation-delay: 10s;
 }
 .slide3 { 
- background: url(../img/d_3.jpg);
+ background: url(../Img/d_3.jpg);
  background-position: center center;
  background-size: cover;
  background-repeat: no-repeat;
  animation-delay: 5s;
 }
 .slide4 { 
- background: url(../img/d_4.jpg);
+ background: url(../Img/d_4.jpg);
  background-position: center center;
  background-size: cover;
  background-repeat: no-repeat;
