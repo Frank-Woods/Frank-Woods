@@ -31,7 +31,7 @@ res.onclick = function result() {
 		flag = true;
 	}
 	var	content = new Image();
-	content.src = "img/" + name + ".jpg";
+	content.src = "Img/" + name + ".jpg";
 	block2.appendChild(content);
 	block1.appendChild(block2);
 	document.getElementsByTagName("main")[0].appendChild(block1);
