@@ -5,25 +5,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>GameHistory</title>
-	<link rel="stylesheet" type="text/css" href="css\style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script type="text/javascript">
+		var localStyle = localStorage.getItem('theme');
+		if (localStyle == "black") {
+			var head = document.getElementsByTagName('head')[0];
+			black = document.createElement("link");
+		    black.setAttribute('id', 'black');
+	 		black.href = "css/styleBlack.css";
+			black.rel = "stylesheet";
+			black.type = "text/css";
+			head.appendChild(black);
+		}
+	</script>
 </head>
 <body>
 	<header>
 		<div class="logo">
-			<img class="graficlogo" src="Img\logo.jpg" alt=" ">
+			<img class="graficlogo" src="Img/logo.jpg" alt=" ">
 		</div>
 		<nav class="Nav">
 			<div class="topNav" id="myTopnav">
 				<a href="index.html">Главная</a>
 				<a href="NewGame.html">Новые игры</a>
 				<a href="News.html">Новости</a>
-				<a href="#">Статьи</a>
-				<a href="#">Видео</a>
-				<a href="#">Галерея</a>
-				<a href="#">Блоги</a>
-				<a href="#">Сервис</a>
+				<a href="Tests.html">Во что поиграть сегодня?</a>
+				<a href="#" id="theme">Темная тема</a>
 				<a id="menu" class="icon">&#9776;</a>
 			</div>
 		</nav>
@@ -48,68 +57,68 @@
 			</div>
 		</div>
 		<div class="main_container">
-			<article class="paper_container">
-				<section class="item_paper">
-					<img class="paperImg" src="Img\paper_1.jpg" alt=" ">
+			<section class="paper_container">
+				<article class="item_paper">
+					<img class="paperImg" src="Img/paper_1.jpg" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam molestiae alias, at, illo deleniti consequuntur, eius distinctio beatae quis iure, velit architecto dicta excepturi totam necessitatibus consectetur provident magni praesentium? <a href="#"><i class="fas fa-angle-double-right"></i></a></p>
-				</section>
-				<section class="item_paper">
-					<img class="paperImg" src="Img\paper_2.jpg" alt=" ">
+				</article>
+				<article class="item_paper">
+					<img class="paperImg" src="Img/paper_2.jpg" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eum, eius unde itaque ipsum a aliquid iusto minus molestias animi, asperiores officia quod deserunt facilis, esse, optio aspernatur distinctio nemo! <a href="#"><i class="fas fa-angle-double-right"></i></a></p>
-				</section>
-				<section class="item_paper">
-					<img class="paperImg" src="Img\paper_3.jpg" alt=" ">
+				</article>
+				<article class="item_paper">
+					<img class="paperImg" src="Img/paper_3.jpg" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus tempore, obcaecati ullam! Esse voluptates labore sit ipsam ullam est eaque autem molestias libero recusandae quae eius, architecto. Adipisci, laboriosam, corrupti! <a href="#"><i class="fas fa-angle-double-right"></i></a></p>
-				</section>
-				<section class="item_paper">
-					<img class="paperImg" src="Img\paper_4.jpg" alt=" ">
+				</article>
+				<article class="item_paper">
+					<img class="paperImg" src="Img/paper_4.jpg" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptatibus natus aliquid doloribus mollitia quae, ex officia, aperiam obcaecati quas, quasi rerum eveniet delectus architecto nostrum enim incidunt. Quas, libero. <a href="#"><i class="fas fa-angle-double-right"></i></a></p>
-				</section>
-				<section class="item_paper">
-					<img class="paperImg" src="Img\paper_5.jpg" alt=" ">
+				</article>
+				<article class="item_paper">
+					<img class="paperImg" src="Img/paper_5.jpg" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut pariatur aut provident eaque non nisi, ullam dolorum iusto. Magni blanditiis ad perspiciatis numquam odio. Repellendus hic numquam, voluptas perferendis voluptatibus! <a href="#"><i class="fas fa-angle-double-right"></i></a></p>
-				</section>
-				<section class="item_paper">
-					<img class="paperImg" src="Img\paper_12.jpg" alt=" ">
+				</article>
+				<article class="item_paper">
+					<img class="paperImg" src="Img/paper_12.jpg" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis officia libero animi unde qui laudantium error iure accusamus recusandae laboriosam, nesciunt delectus doloremque. Tempora, quisquam cum, fugit dolor quas quis. <a href="#"><i class="fas fa-angle-double-right"></i></a></p>
-				</section>
-				<section class="item_paper">
-					<img class="paperImg" src="Img\paper_13.jpg" alt=" ">
+				</article>
+				<article class="item_paper">
+					<img class="paperImg" src="Img/paper_13.jpg" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint id est quaerat. Cum aliquam ipsam corrupti esse possimus voluptatum dicta reprehenderit quod dolor voluptates vero, labore ad. Est ex, ad. <a href="#"><i class="fas fa-angle-double-right"></i></a></p>
-				</section>
-				<section class="item_paper">
-					<img class="paperImg" src="Img\paper_15.jpg" alt=" ">
+				</article>
+				<article class="item_paper">
+					<img class="paperImg" src="Img/paper_15.jpg" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis necessitatibus ut deserunt quod omnis nobis accusamus cum odio et illo harum culpa eligendi asperiores, temporibus voluptate esse laboriosam atque facilis. <a href="#"><i class="fas fa-angle-double-right"></i></a></p>
-				</section>
-				<section class="item_paper">
-					<img class="paperImg" src="Img\paper_9.jpg" alt=" ">
+				</article>
+				<article class="item_paper">
+					<img class="paperImg" src="Img/paper_9.jpg" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere obcaecati vero repellat, accusamus dolorem voluptas dolores maxime quaerat labore adipisci reiciendis quisquam. Odio sunt adipisci perferendis, voluptatum, inventore animi reprehenderit? <a href="#"><i class="fas fa-angle-double-right"></i></a></p>
-				</section>
-				<section class="item_paper">
-					<img class="paperImg" src="Img\paper_14.jpg" alt=" ">
+				</article>
+				<article class="item_paper">
+					<img class="paperImg" src="Img/paper_14.jpg" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium mollitia totam eius excepturi alias accusantium perspiciatis dolorum error quasi ea fugit cupiditate, unde, velit illo. Perferendis excepturi, tenetur hic! <a href="#"><i class="fas fa-angle-double-right"></i></a></p>
-				</section>
-				<section class="item_paper">
-					<img class="paperImg" src="Img\paper_10.jpg" alt=" ">
+				</article>
+				<article class="item_paper">
+					<img class="paperImg" src="Img/paper_10.jpg" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium mollitia totam eius excepturi alias accusantium perspiciatis dolorum error quasi ea fugit cupiditate, unde, velit illo. Perferendis excepturi, tenetur hic! <a href="#"><i class="fas fa-angle-double-right"></i></a></p>
-				</section>
-				<section class="item_paper">
-					<img class="paperImg" src="Img\paper_17.jpg" alt=" ">
+				</article>
+				<article class="item_paper">
+					<img class="paperImg" src="Img/paper_17.jpg" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium mollitia totam eius excepturi alias accusantium perspiciatis dolorum error quasi ea fugit cupiditate, unde, velit illo. Perferendis excepturi, tenetur hic! <a href="#"><i class="fas fa-angle-double-right"></i></a></p>
-				</section>
-			</article>
+				</article>
+			</section>
 		</div>
 		<div class="main_container">
 			<div class="headline">
@@ -117,38 +126,38 @@
 			</div>
 		</div>
 		<div class="main_container">
-			<article class="container">
-				<section class="item">
-					<img class="ImgItem" src="Img\main_5.png" alt=" ">
+			<section class="container">
+				<article class="item">
+					<img class="ImgItem" src="Img/main_5.png" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dicta velit libero placeat distinctio ex.</p>
-				</section>
-				<section class="item">
-					<img class="ImgItem" src="Img\main_3.png" alt=" ">
+				</article>
+				<article class="item">
+					<img class="ImgItem" src="Img/main_3.png" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dicta velit libero placeat distinctio ex.</p>
-				</section>
-				<section class="item">
-					<img class="ImgItem" src="Img\main_6.png" alt=" ">
+				</article>
+				<article class="item">
+					<img class="ImgItem" src="Img/main_6.png" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dicta velit libero placeat distinctio ex.</p>
-				</section>
-				<section class="item">
-					<img class="ImgItem" src="Img\main_1.png" alt=" ">
+				</article>
+				<article class="item">
+					<img class="ImgItem" src="Img/main_1.png" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dicta velit libero placeat distinctio ex.</p>
-				</section>
-				<section class="item">
-					<img class="ImgItem" src="Img\main_4.png" alt=" ">
+				</article>
+				<article class="item">
+					<img class="ImgItem" src="Img/main_4.png" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dicta velit libero placeat distinctio ex.</p>
-				</section>
-				<section class="item">
-					<img class="ImgItem" src="Img\main_2.png" alt=" ">
+				</article>
+				<article class="item">
+					<img class="ImgItem" src="Img/main_2.png" alt=" ">
 					<h2>Lorem ipsum</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dicta velit libero placeat distinctio ex.</p>
-				</section>
-			</article>
+				</article>
+			</section>
 		</div>
 	</main>
 	<footer>
@@ -157,27 +166,31 @@
 				<a href="index.html">Главная</a>
 				<a href="NewGame.html">Игры</a>
 				<a href="News.html">Новости</a>
-				<a href="#">Статьи</a>
-				<a href="#">Видео</a>
-				<a href="#">Галерея</a>
-				<a href="#">Блоги</a>
-				<a href="#">Сервис</a>
+				<a href="Tests.html">Во что поиграть сегодня?</a>
 			</div>
 		</nav>
 		<div class="footerSocial">
 			<div class="Footlogo">
-				<img class="graficlogo" src="Img\logo.jpg" alt=" ">
+				<img class="graficlogo" src="Img/logo.jpg" alt=" ">
 			</div>
 			<div class="social">
-				<a href="#"><img src="Img\social_1.jpg" alt=" "></a>
-				<a href="#"><img src="Img\social_2.jpg" alt=" "></a>
-				<a href="#"><img src="Img\social_3.jpg" alt=" "></a>
-				<a href="#"><img src="Img\social_4.jpg" alt=" "></a>
-				<a href="#"><img src="Img\social_5.jpg" alt=" "></a>
-				<a href="#"><img src="Img\social_6.jpg" alt=" "></a>
+				<a href="#"><img src="Img/social_1.jpg" alt=" "></a>
+				<a href="#"><img src="Img/social_2.jpg" alt=" "></a>
+				<a href="#"><img src="Img/social_3.jpg" alt=" "></a>
+				<a href="#"><img src="Img/social_4.jpg" alt=" "></a>
+				<a href="#"><img src="Img/social_5.jpg" alt=" "></a>
+				<a href="#"><img src="Img/social_6.jpg" alt=" "></a>
 			</div>
 		</div>
 	</footer>
-	<script type="text/javascript" src="js\script.js"></script>
+	<script type="text/javascript">
+		var localStyle = localStorage.getItem('theme');
+		if (localStyle == "black") {
+			var theme = document.getElementById('theme');
+			theme.innerHTML = "Светлая тема";
+		}
+	</script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/theme.js"></script>
 </body>
 </html>

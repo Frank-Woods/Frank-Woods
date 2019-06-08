@@ -70,41 +70,62 @@ h1::before{
   	margin-right: 5px; 
   	background-color: #2E9AFE;
 }
-.main_container{
+.main_container{ 
 	display: flex;
 	justify-content: center;
 }
-.paper_container{
+.container{
 	width: 100%;
 	background-color: white;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
 }
-.item_paper{
+.item{
+	border-right: 1px solid #f7e8e8;
 	border-top: 1px solid #f7e8e8;
+	width: 30%;
 	padding: 10px;
 }
-.info{
-	display: flex;
+ul{
+	text-align: left;
 }
-.info_d{
-	display: flex;
-	padding-left: 1.5px;
+.container .item:first-child{
+	border-left: 1px solid #f7e8e8;
 }
-.p_date{
-	padding-left: 2px;
+.container .item:nth-child(3n+1){
+	border-left: 1px solid #f7e8e8;
 }
-.img{
-	text-align: center;
+.container .item:nth-child(4), .container .item:nth-child(5), .container .item:nth-child(6){
+	border-bottom: 1px solid #f7e8e8;
+}
+input{
+	cursor: pointer;
+}
+span{
+	padding-left: 10px;
+}
+.res{
 	width: 100%;
+	padding: 20px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
-img{
+button{
+	cursor: pointer;
+	width: 350px;
+	font-size: 50px;
+	background: linear-gradient(45deg, #0B2349 42%, #0D61BC 58%, #8AA9D6);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	border: 2px inset black;
+}
+.container img{
+	padding: 50px;
 	max-width: 100%;
-}
-i{
-	padding-right: 5px;
-}
-p{
-	padding-top: 2px;
-	padding-bottom: 2px;
 }
 footer{
 	width: 100%;
@@ -181,11 +202,38 @@ footer nav a:hover{
 		display: block;
 		text-align: left;
 	}
+	.item{
+		width: 45%;
+	}
+	.container .item:nth-child(3n+1){
+		border-left: none;
+	}
+	.container .item:nth-child(4){
+		border-bottom: none;
+	}
+	.container .item:nth-child(odd){
+		border-left: 1px solid #f7e8e8;
+	}
+	.container img{
+		height: 300px;
+	}
 	.social{
 		width: 60%;
 	}
 }
 @media screen and (max-width: 480px){
+	.item{
+		width: 100%;
+	}
+	.container .item:first-child{
+		border-left: none;
+	}
+	.container .item:nth-child(odd){
+		border-left: none;
+	}
+	.container .item:nth-child(5){
+		border-bottom: none;
+	}
 	.footerNav a:not(:first-child){
 		display: none;
 	}
