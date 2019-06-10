@@ -8,6 +8,18 @@
 	<link rel="stylesheet" type="text/css" href="css/styleNews.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script type="text/javascript">
+		var localStyle = localStorage.getItem('theme');
+		if (localStyle == "black") {
+			var head = document.getElementsByTagName('head')[0];
+			black = document.createElement("link");
+		    black.setAttribute('id', 'black');
+	 		black.href = "css/styleNewsBlack.css";
+			black.rel = "stylesheet";
+			black.type = "text/css";
+			head.appendChild(black);
+		}
+	</script>
 </head>
 <body>
 	<header>
@@ -20,6 +32,7 @@
 				<a href="NewGame.html">Новые игры</a>
 				<a href="News.html">Новости</a>
 				<a href="Tests.html">Во что поиграть сегодня?</a>
+				<a href="#" id="theme">Темная тема</a>
 				<a id="menu" class="icon">&#9776;</a>
 			</div>
 		</nav>
@@ -138,6 +151,14 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript">
+		var localStyle = localStorage.getItem('theme');
+		if (localStyle == "black") {
+			var theme = document.getElementById('theme');
+			theme.innerHTML = "Светлая тема";
+		}
+	</script>
+	<script type="text/javascript" src="js/theme_2.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -10,24 +10,24 @@ li{
 	list-style: none;
 }
 body{
-	background-image: url(../Img/d_.jpg);
+	background-image: url(../Img/Img_b.jpg);
 	background-position: center center;
   	background-repeat: no-repeat;
   	background-attachment: fixed;
   	background-size: cover;
 	padding-top: 100px;
-	font-family: 'Font Awesome 5 Free';
+	font-family: 'Josefin Sans', sans-serif;
 	width: 1280px;
 	margin: 0 auto;
 }
-p, a, h1{
-	font-family: 'Josefin Sans', sans-serif;
-}
 .logo{
-	background-color: #f9fafe;
+	background-color: black;
 	width: 100%;
 	display: flex;
 	justify-content: center;
+}
+.logo img{
+	border-radius: 50%;
 }
 .graficlogo{
 	padding: 5px;
@@ -42,21 +42,23 @@ p, a, h1{
 	padding-bottom: 5px;
 	display: flex;
 	justify-content: space-around;
-	background-color: black;
+	background-color: white;
+	color: black;
 }
 .topNav a{
-	color: white;
+	color: black;
 	padding: 14px 16px;
 	font-size: 15px;
 }
 .topNav a:hover{
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid black;
 }
 .icon{
 	display: none;
 }
 .headline{
-	background-color: white;
+	background-color: black;
+	color: white;
 	width: 100%;
 	text-align: left;
 	padding-top: 20px;
@@ -76,54 +78,61 @@ h1::before{
 }
 .paper_container{
 	width: 100%;
-	background-color: white;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	text-align: left;
+	flex-wrap: wrap;
 }
 .item_paper{
-	border-top: 1px solid #f7e8e8;
-	padding: 10px;
+	width: 50%;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	border-top: 1px solid;
 }
-.info{
-	display: flex;
-}
-.info_d{
-	display: flex;
-	padding-left: 1.5px;
-}
-.p_date{
-	padding-left: 2px;
-}
-.img{
-	text-align: center;
-	width: 100%;
-}
-img{
+.item_paper img{
 	max-width: 100%;
-}
-i{
-	padding-right: 5px;
+	float: left;
+	padding-left: 20px;
+	padding-right: 10px;
+	height:315px;
 }
 p{
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-top: 10px;
+}
+.item_frame{
+	text-align: center;
+	width: 50%;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	border-top: 1px solid;
+}
+iframe{
+	max-width: 100%;
 }
 footer{
 	width: 100%;
 	height: auto;
 	background-color: black;
+	color: black;
 	padding-top: 10px;
 }
 footer a{
-	color: white;
+	color: black;
 	font-size: 14px;
 	margin-left: 10px;
 }
 .footerNav{
+	height: 30px;
+	background-color: white;
 	text-align: center;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 }
 footer nav a:hover{
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid black;
 }
 .footerSocial{
 	display: flex;
@@ -153,6 +162,24 @@ footer nav a:hover{
 		width: 100%;
 		padding-top: 0;
 	}
+	h2{
+		padding-top: 10px;
+	}
+	.paper_container{
+		display: flex;
+		flex-direction: column;
+	}
+	.item_paper{
+		text-align: center;
+		width: 100%;
+	}
+	.item_paper img{
+		float: none;
+	}
+	.item_frame{
+		width: 100%;
+		border: none;
+	}
 }
 @media screen and (max-width: 768px){
 	.topNav a:not(:nth-child(8n-7)){
@@ -165,7 +192,7 @@ footer nav a:hover{
 	.topNav a.icon{
 		cursor: pointer;
 		display: block;
-		color: white;
+		color: black;
 	}
 	.topNav.responsive{
 		display: block;
@@ -182,9 +209,11 @@ footer nav a:hover{
 		display: block;
 		text-align: left;
 	}
-	.social{
-		width: 60%;
-	}
+}
+@media screen and (max-width: 600px) {
+	.item_paper img{
+		padding: 0;
+	}	
 }
 @media screen and (max-width: 480px){
 	.footerNav a:not(:first-child){

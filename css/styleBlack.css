@@ -242,6 +242,7 @@ footer nav a:hover{
 	body{
 		width: 100%;
 		padding-top: 0;
+	}
 }
 @media screen and (max-width: 768px){
 	.topNav a:not(:nth-child(8n-7)){
@@ -254,7 +255,7 @@ footer nav a:hover{
 	.topNav a.icon{
 		cursor: pointer;
 		display: block;
-		color: white;
+		color: black;
 	}
 	.topNav.responsive{
 		display: block;

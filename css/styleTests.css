@@ -118,10 +118,11 @@ button{
 	cursor: pointer;
 	width: 350px;
 	font-size: 50px;
-	background: linear-gradient(45deg, #0B2349 42%, #0D61BC 58%, #8AA9D6);
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-	border: 2px inset black;
+	background-color: aliceblue;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px 3px #6060f9, -1px -1px 4px 0px #7c7cb1, inset 0px 0px 20px 2px #6d6dad, inset 0px 0px 11px 0px blue;
+    border: none;
+    color: #2f33e8c2;
 }
 .container img{
 	padding: 50px;

@@ -8,6 +8,18 @@
 	<link rel="stylesheet" type="text/css" href="css/styleTests.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script type="text/javascript">
+		var localStyle = localStorage.getItem('theme');
+		if (localStyle == "black") {
+			var head = document.getElementsByTagName('head')[0];
+			black = document.createElement("link");
+		    black.setAttribute('id', 'black');
+	 		black.href = "css/styleTestsBlack.css";
+			black.rel = "stylesheet";
+			black.type = "text/css";
+			head.appendChild(black);
+		}
+	</script>
 </head>
 <body>
 	<header>
@@ -20,6 +32,7 @@
 				<a href="NewGame.html">Новые игры</a>
 				<a href="News.html">Новости</a>
 				<a href="Tests.html">Во что поиграть сегодня?</a>
+				<a href="#" id="theme">Темная тема</a>
 				<a id="menu" class="icon">&#9776;</a>
 			</div>
 		</nav>
@@ -35,11 +48,11 @@
 				<article name="q" class="item">
 					<p>Какой жанр игр вы любите?</p>
 					<ul>
-						<li><input type="radio" name="q1" value="Action"><span>Action</span></li>
-						<li><input type="radio" name="q1" value="Arcade"><span>Аркада</span></li>
-						<li><input type="radio" name="q1" value="Simulator"><span>Симуляторы/Менеджеры</span></li>
-						<li><input type="radio" name="q1" value="Strategies"><span>Стратегии</span></li>
-						<li><input type="radio" name="q1" value="Adventure"><span>Приключения</span></li>
+						<label><li><input type="radio" name="q1" value="Action"><span>Action</span></li></label>
+						<label><li><input type="radio" name="q1" value="Arcade"><span>Аркада</span></li></label>
+						<label><li><input type="radio" name="q1" value="Simulator"><span>Симуляторы/Менеджеры</span></li></label>
+						<label><li><input type="radio" name="q1" value="Strategies"><span>Стратегии</span></li></label>
+						<label><li><input type="radio" name="q1" value="Adventure"><span>Приключения</span></li></label>
 					</ul>
 				</article>
 				<article name="q" class="item">
@@ -109,6 +122,14 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript">
+		var localStyle = localStorage.getItem('theme');
+		if (localStyle == "black") {
+			var theme = document.getElementById('theme');
+			theme.innerHTML = "Светлая тема";
+		}
+	</script>
+	<script type="text/javascript" src="js/theme_3.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/tests.js"></script>
 </body>
