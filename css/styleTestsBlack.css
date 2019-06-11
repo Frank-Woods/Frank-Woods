@@ -126,7 +126,7 @@ span{
 }
 button{
 	cursor: pointer;
-	width: 350px;
+	width: 100%;
 	font-size: 50px;
 	background-color: aliceblue;
     border-radius: 3px;
